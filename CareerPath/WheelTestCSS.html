@@ -1,0 +1,72 @@
+
+<!-- This is the HTML document with the CSS and JavaScript code embedded -->
+<html>
+<head>
+  <style>
+    /* This is the CSS code for the area outline and the hover effect */
+    #area {
+      outline: none; /* This removes the default outline of the area */
+    }
+<!-- This is the HTML document with the CSS and JavaScript code embedded -->
+<html>
+<head>
+  <style>
+    /* This is the CSS code for the image and the map */
+    #img {
+      position: relative; /* This makes the image position relative to its parent element */
+    }
+
+
+    #area {
+      outline: none; /* This removes the default outline of the area */
+    }
+
+
+    /* This is the CSS code for the color layer */
+    #layer {
+      background-color: rgba(128, 128, 128, 0.5); /* This sets the color and opacity of the layer */
+      position: absolute; /* This makes the layer position absolute to its parent element */
+      top: 0; /* This sets the top position of the layer to 0 */
+      left: 0; /* This sets the left position of the layer to 0 */
+      width: 100%; /* This sets the width of the layer to 100% of its parent element */
+      height: 100%; /* This sets the height of the layer to 100% of its parent element */
+      clip-path: polygon(666px 10px, 702px 12px, 735px 23px, 769px 40px, 793px 58px,
+        817px 80px, 837px 105px, 854px 134px,
+        864px
+        161px,
+        820px
+        211px,
+        749px
+        193px,
+        736px
+        166px,
+        717px
+        150px,
+        694px
+        136px,
+        672px
+        129px,
+        707px
+        75px); /* This sets the shape of the layer to match the area coordinates */
+    }
+
+
+    #layer:hover {
+       display: none; /* This hides the layer when hovered */
+    }
+  </style>
+</head>
+<body>
+  <!-- This is the HTML code for the image and the map -->
+  <img src="https://i.imgur.com/uWaoDVB.png" usemap="#image-map" id="img">
+
+
+  <map name="image-map">
+      <area target="_blank" alt="" title="" href="www.wikipedia.com" coords="666,10,702,12,735,23,769,40,793,58,817,80,837,105,854,134,864,161,820,211,749,193,736,166,717,150,694,136,672,129,707,75" shape="poly" id="area">
+  </map>
+
+
+  <!-- This is the HTML code for the color layer -->
+  <div id="layer"></div>
+</body>
+</html>
